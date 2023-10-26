@@ -6,6 +6,11 @@ import Welcome from './components/Welcome'
 // import AllTheBooks from './components/AllTheBooks'
 import Footer from './components/MyFooter'
 import BookList from './components/BookList'
+import fantasy from './books/fantasy.json'
+import history from './books/history.json'
+import horror from './books/horror.json'
+import romance from './books/romance.json'
+import scifi from './books/scifi.json'
 
 function App() {
   return (
@@ -13,7 +18,7 @@ function App() {
       <MyNavbar />
       <Welcome welcomeMessage="Ciao, benvenuto nel mio shop" />
       {/* <AllTheBooks /> */}
-      <BookList />
+      <BookList books={history} />
       <Footer />
     </div>
   )
